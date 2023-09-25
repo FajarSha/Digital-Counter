@@ -1,0 +1,110 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.digitaltasbeeh.etasbih.dhikrcounter'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.digitaltasbeeh.etasbih.dhikrcounter"
+        minSdk 26
+        targetSdk 33
+        versionCode 3
+        versionName "1.0.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            resValue("string", "app_ads_id", "ca-app-pub-3940256099942544~3347511713")
+            resValue("string", "interstitial_ads_id", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "native_adsmob_ad_id", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "banner_adsmob_ad_id", "ca-app-pub-3940256099942544/6300978111")
+
+
+//            resValue("string", "app_ads_id", "ca-app-pub-3940256099942544~3347511713")
+            resValue("string", "app_open_high", "ca-app-pub-3940256099942544/3419835294")
+            resValue("string", "app_open_medium", "ca-app-pub-3940256099942544/3419835294")
+            resValue("string", "app_open_low", "ca-app-pub-3940256099942544/3419835294")
+
+            resValue("string", "interstitial_high_id", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "interstitial_medium_id", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "interstitial_low_id", "ca-app-pub-3940256099942544/1033173712")
+
+            resValue("string", "banner_high_id", "ca-app-pub-3940256099942544/6300978111")
+            resValue("string", "banner_medium_id", "ca-app-pub-3940256099942544/6300978111")
+            resValue("string", "banner_low_id", "ca-app-pub-3940256099942544/6300978111")
+
+            resValue("string", "native_high_id", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "native_medium_id", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "native_low_id", "ca-app-pub-3940256099942544/2247696110")
+
+            resValue("string", "splash_id", "ca-app-pub-3940256099942544/2014213617")
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue("string", "app_ads_id", "ca-app-pub-8021747795126780~2939294651")
+            resValue("string", "app_open_high", "ca-app-pub-8021747795126780/6676479240")
+            resValue("string", "app_open_medium", "ca-app-pub-8021747795126780/2695752071")
+            resValue("string", "app_open_low", "ca-app-pub-8021747795126780/5410664884")
+
+            resValue("string", "interstitial_high_id", "ca-app-pub-8021747795126780/1027447183")
+            resValue("string", "interstitial_medium_id", "ca-app-pub-8021747795126780/1005635573")
+            resValue("string", "interstitial_low_id", "ca-app-pub-8021747795126780/2556151270")
+
+            resValue("string", "banner_high_id", "ca-app-pub-8021747795126780/1434641298")
+            resValue("string", "banner_medium_id", "ca-app-pub-8021747795126780/6271200853")
+            resValue("string", "banner_low_id", "ca-app-pub-8021747795126780/8000049645")
+
+            resValue("string", "native_high_id", "ca-app-pub-8021747795126780/5793808268")
+            resValue("string", "native_medium_id", "ca-app-pub-8021747795126780/5277683385")
+            resValue("string", "native_low_id", "ca-app-pub-8021747795126780/4990742927")
+
+            resValue("string", "splash_id", "ca-app-pub-8021747795126780/7592855531")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.6'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.1'
+    implementation 'com.google.firebase:firebase-config-ktx:21.2.1'
+
+
+    def lifecycle_version = "2.3.1"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-process:2.3.1'
+
+    implementation 'com.android.billingclient:billing:6.0.1'
+
+}

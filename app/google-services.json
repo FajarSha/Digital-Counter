@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339417963071",
+    "project_id": "digital-tasbeeh-counter-50fe2",
+    "storage_bucket": "digital-tasbeeh-counter-50fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339417963071:android:0cbee0698396e4d6da368a",
+        "android_client_info": {
+          "package_name": "com.digitaltasbeeh.etasbih.dhikrcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339417963071-h8unuq9fn5r81tkpns58k18plgr5346c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQrsgd46zfvBbD-tsRvA9ctFeLfuJFIyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339417963071-h8unuq9fn5r81tkpns58k18plgr5346c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
